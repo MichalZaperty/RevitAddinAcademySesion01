@@ -51,7 +51,7 @@ namespace Sesion01
                 {
                     text = text + "BUZZ";
                 }
-                if (i%3!=0 && i%5!=0)
+                if (i%3!=0 && i%5!=0)       // Is there a way to use else statement with to conditions ?
                 {
                     text = i.ToString();
                 }
