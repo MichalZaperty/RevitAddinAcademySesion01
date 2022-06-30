@@ -40,7 +40,7 @@ namespace Sesion01
             Transaction t = new Transaction(doc, "Create Text Note");
             t.Start();
 
-            int range = 50;
+            int range = 100;
             for (int i = 1; i <= range; i++)
             {
                 if(i%3 == 0)
