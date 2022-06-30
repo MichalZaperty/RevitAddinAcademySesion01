@@ -9,6 +9,15 @@
     <VendorId>com.typepad.thebuildingcoder</VendorId>
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>
+	<AddIn Type="Command">
+		<Text>Command Sesion01 Challenge</Text>
+		<Description>Some description for Sesion01</Description>
+		<Assembly>Sesion01.dll</Assembly>
+		<FullClassName>Sesion01.Command01Challenge</FullClassName>
+		<ClientId>0F224988-8CE4-4768-9B37-C220D3B35999</ClientId>
+		<VendorId>com.typepad.thebuildingcoder</VendorId>
+		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+	</AddIn>
   <AddIn Type="Application">
     <Name>Application Sesion01</Name>
     <Assembly>Sesion01.dll</Assembly>
