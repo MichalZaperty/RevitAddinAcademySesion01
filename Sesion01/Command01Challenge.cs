@@ -43,27 +43,38 @@ namespace Sesion01
             int range = 100;
             for (int i = 1; i <= range; i++)
             {
-                if(i%3 == 0)
-                {
-                    text = text + "FIZZ";
-                }
-                if(i%5 == 0)
-                {
-                    text = text + "BUZZ";
-                }
-                if (i%3!=0 && i%5!=0)       // Is there a way to use else statement with to conditions ?
-                {
-                    text = i.ToString();
-                }
-                TextNote curNote = TextNote.Create(doc, doc.ActiveView.Id, curPoint, text, collector.FirstElementId());
+                
+                TextNote curNote = TextNote.Create(doc, doc.ActiveView.Id, curPoint, checkValue(i), collector.FirstElementId());
                 curPoint = curPoint.Subtract(offsetPoint);
-                text = "";
+               
             }
-
+       
             t.Commit();
             t.Dispose();
 
             return Result.Succeeded;
+
+            
         }
+        internal string checkValue(int couter)
+        {
+            string text = "";
+
+            if (couter % 3 == 0)
+            {
+                text = text + "FIZZ";
+            }
+            if (couter % 5 == 0)
+            {
+                text = text + "BUZZ";
+            }
+            if (couter % 3 != 0 && couter % 5 != 0)
+            {
+                text = couter.ToString();
+            }
+            return text;
+
+        }
+
     }
 }
